@@ -1,0 +1,96 @@
+/*Imports*/
+@import "_header";
+@import "_about-us";
+@import "_activities";
+@import "_testimonials";
+@import "_footer";
+@import "_facts";
+@import "_contacts";
+/*Imports*/
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+/*Fonts*/
+/*Обнуление*/
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul,
+ol,
+li{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body{
+    height: 100vh;
+}
+body{
+    overflow-x: hidden;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+section{
+    height: 130vh;
+}
+::selection {
+    background: #fad85b;
+    color: #fff;
+}
+/*Обнуление*/
+
+/*ButtonUp*/
+.back-to-top {
+    position: fixed;
+    bottom: -100px;
+    padding: 10px 12px;
+    right: 50px;
+    cursor: pointer;
+    transition: 0.3s all;
+    z-index: 9999;
+    background-color: #4fd3f6;
+    width: 50px;
+    height: 50px;
+    @media (max-width: 300px){
+        right: 22px;
+        width: 30px;
+        height: 30px;
+        padding: 2px 12px;
+    }
+}
+.back-to-top:hover{
+    background: rgba(79, 211, 246, 0.5);
+}
+.back-to-top span{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin: -3px 0 0 0;
+    @media (max-width: 300px){
+        font-size: 20px;
+    }
+}
+.back-to-top.active {
+    bottom: 50px;
+    transition: 0.3s all;
+}
+/*ButtonUp*/

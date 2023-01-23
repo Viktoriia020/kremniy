@@ -1,0 +1,78 @@
+/*Activities*/
+.activities{
+  height: 138vh;
+  &__wrapper{
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    @media (max-width: 1100px){
+      max-width: 650px;
+    }
+    @media (max-width: 800px){
+      max-width: 400px;
+    }
+    .activities__item{
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      padding: 5%;
+      background: rgba(255, 255, 255, 0.24);
+      box-sizing: initial;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      h2{
+        padding: 50px 0 0 0;
+        width: 200px;
+        @media (max-width: 580px){
+          width: 136px;
+        }
+      }
+      &:nth-child(1){
+        top: 19vh;
+        left: 4vw;
+        @media (max-width: 580px){
+          left: 10vw;
+        }
+      }
+      &:nth-child(2){
+        top: 19vh;
+        right: 4vw;
+        @media (max-width: 580px){
+          right: 10vw;
+        }
+      }
+      &:nth-child(3){
+        top: 74vh;
+        right: 4vw;
+        @media (max-width: 580px){
+          right: 10vw;
+        }
+      }
+      &:nth-child(4){
+        left: 0;
+        right: 0;
+        top: 55vh;
+        bottom: 0;
+        margin: auto;
+        h2{
+          padding: 94px 0 0 0;
+        }
+      }
+      &:nth-child(5){
+        top: 74vh;
+        left: 4vw;
+        @media (max-width: 580px){
+          left: 10vw;
+        }
+      }
+    }
+  }
+}
+/*Activities*/
